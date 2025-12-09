@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: lyhui-MacBookPro
+    runs-on: [self-hosted, lyhui-MacBookPro]
 
     steps:
     - uses: actions/checkout@v4
