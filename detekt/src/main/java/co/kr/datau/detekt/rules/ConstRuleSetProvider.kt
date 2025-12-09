@@ -8,4 +8,5 @@ class ConstRuleSetProvider : RuleSetProvider {
     override fun instance(config: Config): RuleSet {
         return RuleSet(ruleSetId, listOf(ConstValueRule(config)))
     }
+    //test
 }
