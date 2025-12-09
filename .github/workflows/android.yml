@@ -31,12 +31,12 @@ jobs:
 #    - name: Run detekt
 #      run: ./gradlew detekt
 
-    - name: Slack Notification
-      if: always()
-      uses: 8398a7/action-slack@v3
-      with:
-        status: ${{ job.status }}
-        fields: workflow,job,commit,repo,author,took,ref
-        author_name: OhJongSeok
-      env:
-        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+    # - name: Slack Notification
+    #   if: always()
+    #   uses: 8398a7/action-slack@v3
+    #   with:
+    #     status: ${{ job.status }}
+    #     fields: workflow,job,commit,repo,author,took,ref
+    #     author_name: OhJongSeok
+    #   env:
+    #     SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
